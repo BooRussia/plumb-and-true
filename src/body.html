@@ -1,0 +1,27 @@
+<div class="app">
+  <aside class="sched">
+    <div class="brand">
+      <svg viewBox="0 0 32 44" width="30" height="42" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M16 1v14"/><path d="M9 15h14v7l-7 20-7-20z" fill="currentColor"/><path d="M12 15v-3h8v3"/></svg>
+      <div><h1>Plumb &amp; True</h1><p>A field guide to hanging doors</p></div>
+    </div>
+    <p class="sched-h">Door schedule</p>
+    <nav class="doors" id="doors" aria-label="Door types"></nav>
+  </aside>
+  <section class="draw" aria-label="3D model">
+    <div class="stage" id="stage">
+      <canvas id="gl" aria-label="Interactive 3D model of the door and its framing"></canvas>
+      <div class="labels" id="labels" aria-hidden="true"></div>
+      <div class="tip" id="tip" hidden></div>
+      <div class="hud hud-tl"><div class="sheet-id"><b id="sheetName"></b><span id="sheetSize"></span></div></div>
+      <div class="hud hud-tr" id="viewBtns"></div>
+      <div class="hud hud-bl" id="poseBox"></div>
+      <div class="hud hud-br">Drag to orbit · scroll to zoom · click the door</div>
+    </div>
+    <div class="tape" id="tape" hidden></div>
+  </section>
+  <section class="notes" aria-label="Instructions">
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="pane" id="pane" tabindex="-1"></div>
+  </section>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
